@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/middleware.js"],"sourcesContent":["// middleware.js\r\nimport { NextResponse } from 'next/server';\r\n\r\nexport function middleware(request) {\r\n  const url = request.nextUrl;\r\n\r\n  console.log('Middleware executed for URL:', url.pathname);\r\n\r\n  if (url.pathname === '/') {\r\n    url.pathname = '/dashboard';\r\n    return NextResponse.redirect(url);\r\n  }\r\n\r\n  return NextResponse.next();\r\n}\r\n\r\nexport const config = {\r\n  matcher: ['/'],\r\n};\r\n"],"names":[],"mappings":"AAAA,gBAAgB;;;;;;;AAChB;AAAA;;AAEO,SAAS,WAAW,OAAO;IAChC,MAAM,MAAM,QAAQ,OAAO;IAE3B,QAAQ,GAAG,CAAC,gCAAgC,IAAI,QAAQ;IAExD,IAAI,IAAI,QAAQ,KAAK,KAAK;QACxB,IAAI,QAAQ,GAAG;QACf,OAAO,gMAAY,CAAC,QAAQ,CAAC;IAC/B;IAEA,OAAO,gMAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QAAC;KAAI;AAChB"}}]
+}

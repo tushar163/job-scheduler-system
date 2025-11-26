@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///E:/tejas/Task/job-schedular-frontend/src/app/%28modules%29/dashboard/page.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nfunction page() {\r\n  return (\r\n    <div className='p-4'>page</div>\r\n  )\r\n}\r\n\r\nexport default page"],"names":[],"mappings":";;;;;AAAA;;;AAEA,SAAS;IACP,qBACE,8OAAC;QAAI,WAAU;kBAAM;;;;;;AAEzB;uCAEe"}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///E:/tejas/Task/job-schedular-frontend/src/app/providers.jsx"],"sourcesContent":["// app/providers.tsx\r\n\"use client\";\r\nimport { HeroUIProvider } from '@heroui/react'\r\nimport { ToastProvider } from \"@heroui/toast\";\r\n\r\nexport default function Providers({ children }) {\r\n    return (\r\n        <HeroUIProvider>\r\n            <ToastProvider />\r\n            {children}\r\n        </HeroUIProvider>\r\n    )\r\n}"],"names":[],"mappings":"AAAA,oBAAoB;;;;;;AAEpB;AACA;AAFA;;;;AAIe,SAAS,UAAU,EAAE,QAAQ,EAAE;IAC1C,qBACI,8OAAC,kLAAc;;0BACX,8OAAC,gLAAa;;;;;YACb;;;;;;;AAGb"}}]
+}
