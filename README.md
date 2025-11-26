@@ -506,6 +506,72 @@ ConfirmationModal → Delete confirmation dialog
 Header→ Top navigation bar
 SideBar→ Left menu navigation
 ```
+## AI tools used
+- Claude AI 
+``` import React from 'react';
+
+const Sidebar = ({ isOpen }) => {
+  return (
+    <aside
+      className={`${
+        isOpen ? 'w-64' : 'w-0'
+      } bg-primary  text-white transition-all duration-300 overflow-hidden`}
+    >
+      <div className="p-6">
+        <h1 className="text-2xl font-bold mb-8">Dotix Automation</h1>
+        
+        <nav className="space-y-2">
+          <a href="/dashboard" className="flex items-center space-x-3 px-4 py-3 rounded-lg bg-gray-800 text-white">
+            <span>Dashboard</span>
+          </a>
+          <a href="/jobs" className="flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-primary-700 text-white">
+            <span>Jobs</span>
+          </a>
+         
+        </nav>
+      </div>
+    </aside>
+  );
+};
+
+export default Sidebar;(make the side bar UI modern and give the active route functionality this next.js code)
+```
+- DeepSeek 
+``` // Prepare webhook payload
+                const webhookBody = {
+                    jobId: completedJob.id,
+                    taskName: completedJob.taskName,
+                    priority: completedJob.priority,
+                    payload: completedJob.payload,
+                    completedAt: new Date()
+                };
+
+                const webhookURL = process.env.WEBHOOK_URL; 
+import React from 'react';
+import { Menu, X, Plus } from 'lucide-react';
+
+const Header = ({ sidebarOpen, setSidebarOpen, onCreateJob }) => {
+  return (
+    <header className="bg-white shadow-sm z-10">
+      <div className="flex items-center justify-between px-6 py-4">
+        <div className="flex items-center space-x-4">
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            {sidebarOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+          
+        </div>
+        
+        
+      </div>
+    </header>
+  );
+};
+
+export default Header;(in header display the webhook notification with modern UI )
+```
 
 
 
